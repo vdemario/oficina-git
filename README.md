@@ -53,6 +53,12 @@ git commit -m "Commitar arquivo teste"
 
 Aqui, se você rodar o `git status` ele vai dizer que está tudo limpo e não há nada modificado no seu repositório.
 
+É possível fazer git add e git commit juntos:
+
+```
+git commit -am "Adicionar e commitar"
+```
+
 ### git log
 
 Para ver o commit que você fez, use o git log:
