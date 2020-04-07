@@ -12,7 +12,20 @@ Ferramentas de controle de versão permitem que você "salve" o seu trabalho vá
 
 ## Comandos básicos
 
+Pra começar a trabalhar com git, você precisa de um `repositório`. Um repositório é uma pasta que o `git` vai monitorar para poder reconhecer alterações.
+
 ### git init
+
+Para usar o git em uma pasta e tratá-la como repositório, use o comando `git init`:
+
+```
+cd ~/oficina-git
+git init
+```
+
+Uma mensagem aparecerá:
+
+> Initialized empty Git repository in /tmp/oficina-git/.git/
 
 ### git status
 
