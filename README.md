@@ -117,6 +117,8 @@ Na primeira vez que você quiser fazer push para o github, você precisa configu
 
 ### git pull
 
+O `git pull` é o inverso do `git push`. Quando existem novas alterações no remote/github você pode usar o `git pull` pra baixar essas alterações para o seu repositório local. Isso é muito útil quando você trabalha em várias máquinas ou para quando várias pessoas trabalham no mesmo repositório.
+
 ## Branches
 
 ### git branch
@@ -124,8 +126,6 @@ Na primeira vez que você quiser fazer push para o github, você precisa configu
 ### git checkout
 
 ## Outras partes interessantes
-
-### git log
 
 ### .gitignore
 
