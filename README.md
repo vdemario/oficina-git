@@ -65,6 +65,14 @@ Usar o git te permite viajar no tempo!
 
 ![back to the future](./img/back-to-the-future.jpg)
 
+## Commit early, commit often
+
+Uma boa prática no uso do git é commitar cedo e commitar com frequência. Ou seja, se você fez alterações no seu repositório e salvou já vale a pena commitar. Não espere para terminar algo grande, salve no meio do caminho e vá fazendo vários commits no meio do caminho.
+
+Mais commits nunca é uma coisa ruim. Fica fácil de entender o passo a passo do projeto, fica fácil de voltar atrás, de consultar uma coisa que você fez antes, é sempre bom.
+
+Commite cedo e commite com frequência!
+
 ## Remotes
 
 Toda essa viagem no tempo é linda, mas só está acontecendo na sua máquina até agora. E se eu quiser trabalhar nesse repositório junto com outra pessoa, como eu faço? Crio um arquivo .zip e mando pra ela por email? E se depois disso nós duas fizermos alterações, como que a gente junta o que todo mundo fez?
@@ -207,10 +215,15 @@ Fast-forward
 
 Se você quiser entender melhor como branches e merges funcionam, com gráficos e detalhes sobre cenários onde acontecem conflitos de merge (alterações incompatíveis entre os dois branches), consulte a [seção 3.2 do livro Pro Git](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 
-### Commit early, commit often
+## Ao infinito e além
+
+Tem muito mais que se pode fazer com `git`. Corrigir erros em um commit, transformar vários commits em um só, manipular o histórico, reverter uma alteração, criar atalhos pras funções mais usadas, integrar múltiplos repositórios, usar git dentro de outras ferramentas e muito mais.
+
+Não tente aprender tudo que dá pra fazer com `git` de uma única vez. Colabore com outras pessoas usando os comandos básicos, navegue no seu histórico, pegue prática em usar o github e volte às referências para aprender mais com o tempo.
 
 ## Referências e como se aprofundar
 
 - [LMS](https://lms.laboratoria.la/cohorts/spl-2020-03-bc-core-sap004/courses/scm-pt)
 - [Livro Pro Git](https://git-scm.com/book/en/v2)
 - [Learn Git in 30 minutes](https://tutorialzine.com/2016/06/learn-git-in-30-minutes)
+- [Git Best Practices](https://sethrobertson.github.io/GitBestPractices)
