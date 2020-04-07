@@ -27,11 +27,43 @@ Uma mensagem aparecerá:
 
 > Initialized empty Git repository in /tmp/oficina-git/.git/
 
-### git status
+### git add e git status
 
-### git add
+Se eu edito um arquivo ele automaticamente entra pro git? Não, você precisa pedir para _trackear_ este arquivo, ou seja, adicionar ele ao git. E como eu sei se um arquivo está no git ou não? Use o comando `git status`:
+
+![git status](./img/git-status.png)
+
+Nesse exemplo existe um arquivo chamado `teste`, com o nome em vermelho no print, que o git não conhece. Veja que ele aparece na seção _Untracked files_, ou seja, arquivos não trackeados.
+
+Para adicionar, use o comando `git add`:
+
+![git add](./img/git-add.png)
+
+A partir daqui o git vai saber que o arquivo `teste` existe e caso você faça novas alterações ele vai mostrar no `git status` que o arquivo tá modificado.
 
 ### git commit
+
+Então blz, adicionei o arquivo `teste` e ele agora está salvo naquele histórico, né? Ainda não.
+
+Pra isso, precisamos usar o `git commit`. O comando commit é o que realmente grava uma versão. O `git add` basicamente diz ao git: acompanha esse arquivo aqui, pega essas mudanças que eu fiz nele. O que o commit faz é um ctrl+s, ou seja, ele salva a versão atual.
+
+```
+git commit -m "Commitar arquivo teste"
+```
+
+Aqui, se você rodar o `git status` ele vai dizer que está tudo limpo e não há nada modificado no seu repositório.
+
+### git log
+
+Para ver o commit que você fez, use o git log:
+
+![git log](./img/git-log.png)
+
+Conforme você for avançando no projeto e fazendo novos commits o `git log` vai ficando mais longo e vai mostrando tudo que você fez no meio do caminho. Dá para entrar em qualquer commit e ver como eram os arquivos do seu repositório naquele momento no tempo.
+
+Usar o git te permite viajar no tempo!
+
+![back to the future](./img/back-to-the-future.jpg)
 
 ## Remotes
 
