@@ -136,9 +136,76 @@ git config --global user.email meuemail@exemplo.com.br
 
 ## Seção bônus: branches
 
+Está tudo indo bem e você já está super acostumada a fazer commits, dar push para mandar o seu repositório para o github e já começou a trabalhar junto com outras pessoas inclusive. A colaboração tá indo bem e vocês decidiram se dividir pra fazer partes diferentes do seu projeto, tem duas telas e a pessoa A vai fazer a tela 1 enquanto a pessoa B vai fazer a tela 2.
+
+Vocês vão fazendo o passo a passo de cada tela, commitando e fazendo push, mas começa a ficar difícil trabalhar juntas pq estão modificando em paralelo o projeto com dois objetivos diferentes. As duas pessoas adicionam funções no fim de um arquivo por exemplo e as alterações de vocês estão atrapalhando o trabalho uma da outra.
+
+Tem um jeito melhor de trabalhar assim: branches! Um branch é uma espécie de versão paralela do código do projeto. Até agora nós sempre trabalhamos em um branch chamado `master`. O `master` sempre existe e ele é o ponto central do projeto. Agora, na hora de colaborar, a pessoa A pode abrir um branch chamado `tela-1` e a pessoa B pode abrir um branch chamado `tela-2` e cada uma vai fazer commits para o seu branch sem ninguém atrapalhar ninguém. Depois as alterações vão para o master e aí são integradas no trabalho de todo mundo.
+
 ### git branch
 
+Para ver quais branches existem no seu repositório local, rode o comando `git branch`:
+
+```
+$ git branch 
+* master
+  tela-1
+```
+
+Na primeira vez que você rodar, só vai aparecer o branch master.
+
 ### git checkout
+
+O comando `git checkout` tem várias funções, inclusive a de criar um novo branch:
+
+```
+$ git checkout -b tela-2
+Switched to a new branch 'tela-2'
+```
+
+Repare no parâmetro `-b` do `git checkout`, é ele que faz um novo branch ser criado.
+
+Agora se você rodar o `git status` ele vai dizer que você está no branch `tela-2`:
+
+```
+$ git status
+On branch tela-2
+```
+
+E o `git branch` vai mostrar o seu novo branch na lista:
+
+```
+$ git branch 
+  master
+  tela-1
+* tela-2
+```
+
+Para trocar de um branch para outro use o comando `checkout` sem o parâmetro `-b`:
+
+```
+$ git checkout master
+Switched to branch 'master'
+```
+
+### git merge
+
+O trabalho na tela 1 ficou pronto. Pra mandar o seu trabalho para o master use o comando `git merge`. `Merge` pode ser traduzido livremente como `misturar`. Na prática, o que o merge faz é juntar os commits de um branch com os commits de outro.
+
+```
+$ git checkout master
+Switched to branch 'master'
+$ git merge tela-1
+Updating c094039..ab8ffbe
+Fast-forward
+ a | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a
+```
+
+Às vezes o `git merge` cria um novo commit quando temos muitas alterações.
+
+Se você quiser entender melhor como branches e merges funcionam, com gráficos e detalhes sobre cenários onde acontecem conflitos de merge (alterações incompatíveis entre os dois branches), consulte a [seção 3.2 do livro Pro Git](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 
 ### Commit early, commit often
 
