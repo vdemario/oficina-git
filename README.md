@@ -87,7 +87,17 @@ Além disso, ele também funciona como uma rede social, facilita com que pessoas
 
 ### git clone
 
+Para trabalhar localmente com um repositório remoto, precisamos usar o comando `git clone`. O git clone faz download de um repositório git que está em outro lugar e copia ele para a sua máquina. Por exemplo, para clonar esta oficina aqui, rode:
+
+```
+git clone https://github.com/vdemario/oficina-git.git
+```
+
+O repositório `github.com/vdemario/oficina-git` é público, então você pode fazer uma cópia dele à vontade, inclusive se você não tiver uma conta no github.
+
 ### git push
+
+Ok, fiz várias alterações no meu código, commitei várias vezes, tenho todo um histórico bonitinho do meu trabalho. Agora eu quero mandar isso pro github pra poder pegar o código em outra máquina e continuar trabalhando. Ou eu quero mandar para o github pra poder mostrar pra outra pessoa o que eu fiz e trabalharmos juntos. O comando que você precisa usar para isso é o `git push`.
 
 ### git pull
 
