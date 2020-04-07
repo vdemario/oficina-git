@@ -119,17 +119,26 @@ Na primeira vez que você quiser fazer push para o github, você precisa configu
 
 O `git pull` é o inverso do `git push`. Quando existem novas alterações no remote/github você pode usar o `git pull` pra baixar essas alterações para o seu repositório local. Isso é muito útil quando você trabalha em várias máquinas ou para quando várias pessoas trabalham no mesmo repositório.
 
-## Branches
-
-### git branch
-
-### git checkout
-
 ## Outras partes interessantes
 
 ### .gitignore
 
+Caso você queira ter alguns arquivos na sua pasta que não entrem no git você pode criar um arquivo chamado `.gitignore` e listar nele os tipos de arquivos ou pastas que você quer que o git ignore. É muito útil para ignorar pastas como o `node_modules` ou arquivos criados automaticamente por ferramentas, como arquivos com extensão `.pyc` pra quem trabalha em python e pastas com configurações de editores como `.vscode/` ou `.idea/`.
+
 ### git config
+
+O git config tem várias configurações que podem ser globais (valem pro ambiente inteiro) ou locais (valem só para o repositório). Um dos usos mais comuns do git config é definir o nome e o email que aparecem nos commits. Funciona assim:
+
+```
+git config --global user.name "Meu Nome"
+git config --global user.email meuemail@exemplo.com.br
+```
+
+## Seção bônus: branches
+
+### git branch
+
+### git checkout
 
 ### Commit early, commit often
 
