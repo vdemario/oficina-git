@@ -99,6 +99,22 @@ O repositório `github.com/vdemario/oficina-git` é público, então você pode 
 
 Ok, fiz várias alterações no meu código, commitei várias vezes, tenho todo um histórico bonitinho do meu trabalho. Agora eu quero mandar isso pro github pra poder pegar o código em outra máquina e continuar trabalhando. Ou eu quero mandar para o github pra poder mostrar pra outra pessoa o que eu fiz e trabalharmos juntos. O comando que você precisa usar para isso é o `git push`.
 
+```
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 825 bytes | 825.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vdemario/oficina-git.git
+   cba46b1..45b0928  master -> master
+```
+
+Em geral, você não precisa se preocupar muito com os detalhes que o `git push` te dá, mas é importante ler principalmente o final do texto pra saber se deu tudo certo ou se um erro aconteceu. Nesse exemplo, repare na frase _completed with 1 local object_. Isso significa que o `git push` completou e conseguiu enviar dados para o repositório remoto, ou seja, para o github.
+
+Na primeira vez que você quiser fazer push para o github, você precisa configurar a conexão entre o seu `git` local e a sua conta no `github`, para o github saber que o push que ele está recebendo vem da pessoa certa. Existem muitas formas de fazer isso que estão bem documentadas no [GitHub Help](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git).
+
 ### git pull
 
 ## Branches
