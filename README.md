@@ -67,9 +67,23 @@ Usar o git te permite viajar no tempo!
 
 ## Remotes
 
+Toda essa viagem no tempo é linda, mas só está acontecendo na sua máquina até agora. E se eu quiser trabalhar nesse repositório junto com outra pessoa, como eu faço? Crio um arquivo .zip e mando pra ela por email? E se depois disso nós duas fizermos alterações, como que a gente junta o que todo mundo fez?
+
+Felizmente, temos uma opção melhor: usar _remotes_. Um remote é só uma cópia do seu repositório em outra máquina. O git é capaz de reconhecer vários remotes e entender que eles estão trabalhando no mesmo repositório, o que facilita a integração entre as mudanças feitas em vários lugares diferentes.
+
+E é aí que entra o github.
+
 ### Github
 
+O [github](github.com) é o maior e mais famoso _remote_ de git que existe. Ele funciona como uma enorme máquina que contém remotes de vários repositórios e de várias pessoas, é como se fosse um repositório central de git.
+
+Além disso, ele também funciona como uma rede social, facilita com que pessoas trabalhando nos mesmos repositórios compartilhem seu código e tem muitas funcionalidades além disso, como repositórios privados, organizações, controle de acesso para definir quem pode mexer no quê e muito mais.
+
 ### git e github é a mesma coisa?
+
+`git` é a ferramenta de linha de comando. `github` é o site pra onde nós podemos enviar as nossas mudanças e compartilhá-las com o mundo.
+
+É comum confundir os dois mas se lembre que nós começamos a usar o `git` antes de falar sobre o `github`, o `git` é uma ferramenta independente, você pode usar ele só localmente e nunca pensar no github ou pode usar outros sites concorrentes do github também, como o [bitbucket](https://bitbucket.org/) ou o [gitlab](https://gitlab.com).
 
 ### git clone
 
